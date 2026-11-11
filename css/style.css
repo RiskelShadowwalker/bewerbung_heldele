@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  background-color: #1f2125;
+  color: #e6e6e6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+header {
+  padding: 30px 15px 20px;
+  background-color: #2a2d33;
+  border-bottom: 3px solid #e39661;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+  color: #e39661;
+}
+
+header p {
+  margin: 5px 0 15px;
+}
+
+nav a {
+  margin: 0 8px;
+  color: #e6e6e6;
+}
+
+nav a:hover {
+  color: #e39661;
+}
+
+#theme-button {
+  margin-top: 15px;
+  padding: 6px 12px;
+  background-color: #1f2125;
+  color: #e6e6e6;
+  border: 1px solid #e39661;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px 30px;
+}
+
+h2 {
+  margin-top: 45px;
+  border-bottom: 1px solid #3d4149;
+  color: #e39661;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+a {
+  color: #e39661;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+code {
+  padding: 2px 5px;
+  background-color: #17181b;
+  font-family: "Courier New", monospace;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #3d4149;
+}
+
+.documents img {
+  margin-right: 10px;
+}
+
+footer {
+  padding: 20px;
+  border-top: 1px solid #3d4149;
+  text-align: center;
+}
+
+dialog {
+  max-width: 900px;
+  width: 90%;
+  padding: 10px;
+  background-color: #2a2d33;
+  color: #e6e6e6;
+  border: 1px solid #e39661;
+  text-align: center;
+  cursor: pointer;
+}
+
+dialog p {
+  margin: 0 0 10px;
+}
+
+dialog img {
+  width: 100%;
+}
+
+body.light {
+  background-color: #ffffff;
+  color: #222222;
+}
+
+body.light header {
+  background-color: #eeeeee;
+  border-bottom-color: #9a4b1c;
+}
+
+body.light h1,
+body.light h2,
+body.light a {
+  color: #9a4b1c;
+}
+
+body.light nav a {
+  color: #222222;
+}
+
+body.light h2,
+body.light footer {
+  border-color: #cccccc;
+}
+
+body.light code {
+  background-color: #eeeeee;
+}
+
+body.light img {
+  border-color: #cccccc;
+}
+
+body.light #theme-button {
+  background-color: #ffffff;
+  color: #222222;
+  border-color: #9a4b1c;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 3px 6px;
+  }
+}
+
+@media print {
+  body, header {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  h1, h2, a {
+    color: #000000;
+  }
+
+  nav, #theme-button {
+    display: none;
+  }
+}
