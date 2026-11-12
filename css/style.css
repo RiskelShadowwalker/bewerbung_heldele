@@ -4,11 +4,19 @@ body {
   color: #e6e6e6;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
-  line-height: 1.6;
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+nav,
+#theme-button {
+  font-family: Consolas, "DejaVu Sans Mono", monospace;
 }
 
 header {
-  padding: 30px 15px 20px;
+  padding: 45px 15px 25px;
   background-color: #2a2d33;
   border-bottom: 3px solid #e39661;
   text-align: center;
@@ -16,48 +24,64 @@ header {
 
 h1 {
   margin: 0;
-  font-size: 40px;
+  font-size: 42px;
   color: #e39661;
 }
 
 header p {
-  margin: 5px 0 15px;
+  max-width: 600px;
+  margin: 8px auto 20px;
+  color: #b8bcc4;
 }
 
 nav a {
-  margin: 0 8px;
+  display: inline-block;
+  margin: 0 4px;
+  padding: 4px 8px;
   color: #e6e6e6;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
 }
 
 nav a:hover {
   color: #e39661;
+  border-bottom-color: #e39661;
 }
 
 #theme-button {
-  margin-top: 15px;
-  padding: 6px 12px;
+  margin-top: 18px;
+  padding: 6px 14px;
   background-color: #1f2125;
   color: #e6e6e6;
   border: 1px solid #e39661;
-  font-size: 15px;
+  border-radius: 4px;
+  font-size: 14px;
   cursor: pointer;
 }
 
+#theme-button:hover {
+  background-color: #e39661;
+  color: #1f2125;
+}
+
 main {
-  max-width: 800px;
+  max-width: 760px;
   margin: 0 auto;
-  padding: 0 15px 30px;
+  padding: 0 20px 40px;
 }
 
 h2 {
-  margin-top: 45px;
-  border-bottom: 1px solid #3d4149;
+  margin-top: 55px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #3d4149;
+  font-size: 26px;
   color: #e39661;
 }
 
 h3 {
-  margin-top: 30px;
+  margin-top: 35px;
   margin-bottom: 5px;
+  font-size: 20px;
 }
 
 a {
@@ -68,18 +92,32 @@ li {
   margin-bottom: 4px;
 }
 
+li::marker {
+  color: #e39661;
+}
+
 img {
   max-width: 100%;
   height: auto;
   border: 1px solid #3d4149;
+  border-radius: 4px;
+}
+
+.screenshot {
+  text-align: center;
 }
 
 .documents img {
   margin-right: 10px;
+  cursor: zoom-in;
+}
+
+.documents a:hover img {
+  border-color: #e39661;
 }
 
 footer {
-  padding: 20px;
+  padding: 25px;
   border-top: 1px solid #3d4149;
   text-align: center;
 }
@@ -91,8 +129,13 @@ dialog {
   background-color: #2a2d33;
   color: #e6e6e6;
   border: 1px solid #e39661;
+  border-radius: 4px;
   text-align: center;
   cursor: pointer;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 dialog p {
@@ -113,6 +156,10 @@ body.light header {
   border-bottom-color: #9a4b1c;
 }
 
+body.light header p {
+  color: #555555;
+}
+
 body.light h1,
 body.light h2,
 body.light a {
@@ -121,6 +168,15 @@ body.light a {
 
 body.light nav a {
   color: #222222;
+}
+
+body.light nav a:hover {
+  color: #9a4b1c;
+  border-bottom-color: #9a4b1c;
+}
+
+body.light li::marker {
+  color: #9a4b1c;
 }
 
 body.light h2,
@@ -132,7 +188,22 @@ body.light img {
   border-color: #cccccc;
 }
 
+body.light .documents a:hover img {
+  border-color: #9a4b1c;
+}
+
 body.light #theme-button {
+  background-color: #ffffff;
+  color: #222222;
+  border-color: #9a4b1c;
+}
+
+body.light #theme-button:hover {
+  background-color: #9a4b1c;
+  color: #ffffff;
+}
+
+body.light dialog {
   background-color: #ffffff;
   color: #222222;
   border-color: #9a4b1c;
@@ -140,12 +211,11 @@ body.light #theme-button {
 
 @media (max-width: 600px) {
   h1 {
-    font-size: 30px;
+    font-size: 32px;
   }
 
   nav a {
-    display: inline-block;
-    margin: 3px 6px;
+    margin: 2px;
   }
 }
 
@@ -155,11 +225,12 @@ body.light #theme-button {
     color: #000000;
   }
 
+  header p,
   h1, h2, a {
     color: #000000;
   }
 
-  nav, #theme-button {
+  nav, #theme-button, footer {
     display: none;
   }
 }
