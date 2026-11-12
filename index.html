@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
   <title>Bewerbung Kevin Roth</title>
+  <meta name="description" content="Meine Bewerbung bei der HELDELE GmbH um einen Ausbildungsplatz als Fachinformatiker für Anwendungsentwicklung, mit meinen Projekten und meinem Praktikum.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -29,8 +30,8 @@
     <h2>Über mich</h2>
     <p>Sehr geehrte Damen und Herren,</p>
     <p>hiermit bewerbe ich mich bei der HELDELE GmbH um einen Ausbildungsplatz als Fachinformatiker für Anwendungsentwicklung. Auf dieser Seite möchte ich Ihnen zeigen, was ich bisher gelernt und gemacht habe. Meinen Lebenslauf haben Sie separat erhalten.</p>
-    <p>Mein erstes Praktikum im IT-Bereich habe ich bereits 2015 während der Schulzeit gemacht, als Systeminformatiker bei der Cinteg AG in Göppingen. Danach bin ich erst einmal in eine andere Richtung gegangen, wie Sie in meinem Lebenslauf sehen können. Seit 2023 beschäftige ich mich mit C++, meiner selbst erlernten Programmiersprache, und bin seitdem auch dabei geblieben. Später kamen dann noch HTML, CSS, JavaScript und etwas PHP dazu. Mein erstes richtiges eigenes Programm, das Spiel 2048, ist seit November 2026 fertig.</p>
-    <p>Im Februar 2025 habe ich ein Praktikum bei der NIC Systemhaus GmbH in Göppingen gemacht, um den Beruf im Alltag kennenzulernen. Das hat mir sehr gut gefallen und seitdem möchte ich auf jeden Fall eine Ausbildung in diesem Beruf machen.</p>
+    <p>Mein erstes Praktikum im IT-Bereich habe ich bereits 2015 während der Schulzeit gemacht, als Systeminformatiker bei der Cinteg AG in Göppingen. Danach bin ich erst einmal in eine andere Richtung gegangen, wie Sie in meinem Lebenslauf sehen können. Seit 2023 bringe ich mir selbst C++ bei und bin seitdem dabei geblieben. Später kamen dann noch HTML, CSS, JavaScript und etwas PHP dazu. Mein erstes richtiges eigenes Programm, das Spiel 2048, ist seit November 2026 fertig.</p>
+    <p>Im Februar 2025 habe ich ein Praktikum bei der NIC Systemhaus GmbH in Göppingen gemacht, um den Beruf im Alltag kennenzulernen. Das hat mir sehr gut gefallen, und seitdem weiß ich, dass ich auf jeden Fall eine Ausbildung in der IT machen möchte.</p>
     <p>Am Programmieren gefällt mir vor allem das Tüfteln. Wenn etwas nicht funktioniert, lese ich mir die Fehlermeldung durch und knoble so lange, bis es läuft.</p>
     <p>Ich lerne am besten, wenn mir jemand direkt zeigt, was ich besser machen kann, weil ich das dann sofort umsetzen kann. Daher möchte ich den Beruf gerne in einem Betrieb lernen und nicht nur alleine zu Hause.</p>
     <p>An Ihrer Stellenausschreibung hat mir besonders gefallen, dass man als Azubi auch bei der Inbetriebnahme beim Kunden dabei ist und mehrere Abteilungen kennenlernt. Meine Programme laufen bisher nur auf meinem eigenen Rechner und ich würde sehr gerne sehen, was Software an einer richtigen Anlage macht. Außerdem liegen Salach und die Berufsschule in Göppingen bei mir in der Nähe.</p>
@@ -49,18 +50,18 @@
       <li>Es zählt die Punkte, erkennt, wenn kein Zug mehr möglich ist, und fragt bei 2048, ob man weiterspielen möchte</li>
     </ul>
     <p>So sieht das im Terminal aus:</p>
-    <p><img src="bilder/2048-terminal.png" width="500" height="618" alt="Mein 2048 im Terminal"></p>
+    <p><img src="bilder/2048-terminal.png" width="500" height="618" alt="Mein 2048 im Terminal: das Spielfeld vor und nach einem Zug nach links mit der Eingabe a, der Punktestand steigt von 472 auf 504"></p>
     <p>Angefangen habe ich ganz klein, nämlich nur damit, eine einzige Reihe nach links zu schieben. Das habe ich dann Schritt für Schritt erweitert und nach jedem Schritt getestet. Dafür habe ich Spielfelder benutzt, bei denen das richtige Ergebnis schon vorher feststand, zum Beispiel muss aus der Reihe 2 2 2 0 beim Schieben nach rechts 0 0 2 4 werden. Bei einem solchen Test kam auch heraus, dass meine erste Version für rechts von der falschen Seite zusammengefügt hat. Gelöst habe ich das, indem die Reihe vor dem Zusammenfügen umgedreht und danach wieder zurückgedreht wird. Beim Schieben nach unten hatte ich später den gleichen Fehler noch einmal, den habe ich dann selbst beim Spielen bemerkt.</p>
     <p>Die Spiellogik habe ich komplett selbst geschrieben. Wenn ich nicht weiterkam, habe ich mir von einer KI Hinweise geben lassen, aber niemals Code. Beim Bauen der .exe und des AppImage hat sie mir am Ende etwas mehr geholfen, das meiste habe ich aber auch dort selbst gemacht.</p>
-    <p>Die fertigen Programme liegen mit im Repository, für Linux als AppImage und für Windows als .exe. Die .exe wird unter Linux mit MinGW gebaut und ist statisch gelinkt, damit sie ohne zusätzliche DLLs läuft. Auf einem echten Windows-PC konnte ich diese auch testen und es funktioniert auch auf Windows.</p>
-    <p>Als Nächstes würde ich gerne die funktionen verbessern, da die vier Funktionen für die Richtungen viel Code wiederholen, den man in eine gemeinsame Funktion auslagern könnte. Außerdem das spiel mit pfeiltasten oder W/A/S/D zu steuern ohne das man die eingabe mit Enter bestätigen muss</p>
+    <p>Die fertigen Programme liegen mit im Repository, für Linux als AppImage und für Windows als .exe. Die .exe wird unter Linux mit MinGW gebaut und ist statisch gelinkt, damit sie ohne zusätzliche DLLs läuft. Die .exe habe ich auch auf einem echten Windows-PC getestet und sie läuft dort.</p>
+    <p>Als Nächstes möchte ich zwei Sachen verbessern. Die vier Funktionen für die Richtungen wiederholen viel Code, den man in eine gemeinsame Funktion auslagern könnte. Außerdem soll man das Spiel mit den Pfeiltasten oder W, A, S und D steuern können, ohne jede Eingabe mit Enter bestätigen zu müssen.</p>
     <p><a href="https://github.com/RiskelShadowwalker/2048-Game-">Zum Code auf GitHub</a></p>
 
     <h3>Server für meine Familie</h3>
     <p>Meine Mutter wollte ihr Microsoft-365-Abo kündigen, aber ihre Fotos und Dokumente weiterhin auf allen Geräten haben. Dafür habe ich im September 2026 einen gebrauchten Mini-PC gekauft und zu einem Server gemacht, der jetzt bei mir zu Hause steht. Darauf läuft Debian ohne GUI und die Dienste laufen in Docker-Containern: Immich für Fotos, Nextcloud für Dateien und Joplin für Notizen. Außerdem habe ich darüber eingerichtet, dass meine eigenen Notizen in Obsidian zwischen PC und Handy synchronisiert werden.</p>
     <p>Erreichbar ist der Server nur über ein privates Netz (Tailscale) und nicht öffentlich im Internet. Die Wartung mache ich per SSH aus VS Code heraus und jede Nacht läuft automatisch ein verschlüsseltes Backup. Die Wiederherstellung habe ich auch getestet.</p>
     <p>So sieht es aus, wenn ich per SSH auf dem Server bin und mir die laufenden Dienste anzeigen lasse:</p>
-    <p><img src="bilder/server-ssh.png" width="760" height="194" alt="Terminal auf meinem Server mit den laufenden Diensten"></p>
+    <p><img src="bilder/server-ssh.png" width="760" height="194" alt="Terminal in VS Code per SSH auf meinem Server: docker compose ls zeigt die laufenden Dienste immich, joplin, nextcloud und obsidian"></p>
 
     <h3>Übungswebseite mit Kontaktformular</h3>
     <p>Mit HTML, CSS und JavaScript habe ich eine Übungswebseite mit Bildern und Musik erstellt. Für das Kontaktformular habe ich ein PHP-Skript geschrieben, das jede Nachricht mit Datum und Uhrzeit in einer CSV-Datei speichert. Das Ganze läuft auf einem Apache-Webserver in einer virtuellen Maschine mit Ubuntu.</p>
@@ -78,7 +79,7 @@
       <li>JavaScript: Grundlagen (lerne ich gerade)</li>
       <li>PHP: erste Schritte</li>
       <li>Git und GitHub: benutze ich für meine Projekte</li>
-      <li>Linux: benutze ich jeden Tag, auch auf meinem Server GUI</li>
+      <li>Linux: benutze ich jeden Tag, auf meinem Server auch ohne GUI</li>
       <li>Docker: Grundlagen (die Dienste auf meinem Server laufen damit)</li>
       <li>Netzwerk: Grundlagen (Heimnetz, VPN, SSH)</li>
       <li>Englisch: fließend</li>
@@ -88,7 +89,7 @@
     <p>Vieles muss ich natürlich noch lernen, zum Beispiel Objektorientierung, SQL oder wie man im Team an einem Programm arbeitet. Dafür möchte ich die Ausbildung machen.</p>
 
     <h3>Wie ich lerne</h3>
-    <p>C++ lerne ich mit dem englischsprachigen Onlinekurs „Beginning C++ Programming – From Beginner to Beyond“ und die Übungen darin löse ich selbst. Die schwerste war bisher eine Pyramide aus Buchstaben mit vielen nested loops, genau diese übung hat mir aber viel bei meinem 2048 projekt geholfen. </p>
+    <p>C++ lerne ich mit dem englischsprachigen Onlinekurs „Beginning C++ Programming – From Beginner to Beyond“ und die Übungen darin löse ich selbst. Die schwerste war bisher eine Pyramide aus Buchstaben mit mehreren verschachtelten Schleifen. Genau diese Übung hat mir später bei meinem 2048 viel geholfen.</p>
     <p>Beim Lernen benutze ich auch KI, allerdings nur als eine Art Nachhilfelehrer. Ich sage ihr immer ausdrücklich, dass sie mir keine Lösung und keinen fertigen Code geben soll, sondern mir nur zeigt, wo mein Fehler liegt oder was ich falsch verstanden habe. Den Code schreibe ich dann selbst. Das dauert zwar länger, aber nur so lerne ich es auch wirklich.</p>
   </section>
 
@@ -111,7 +112,7 @@
 
   <section id="kontakt">
     <h2>Kontakt</h2>
-    <p>Über eine Einladung zu einem Vorstellungsgespräch würde ich mich sehr freuen. Gerne komme ich vorher auch für ein Praktikum oder zum Probearbeiten vorbei. Anfangen könnte ich zum nächsten Ausbildungsbeginn oder, wenn es bei Ihnen möglich ist, auch schon früher. Gerne auch ein praktikum welches bis zum Ausbildungsbegin andauert.</p>
+    <p>Über eine Einladung zu einem Vorstellungsgespräch würde ich mich sehr freuen. Gerne komme ich vorher auch zum Probearbeiten vorbei. Anfangen könnte ich zum nächsten Ausbildungsbeginn oder, wenn es bei Ihnen möglich ist, auch schon früher. Bis zum Ausbildungsbeginn würde ich auch gerne ein Praktikum bei Ihnen machen.</p>
     <p>Meine Kontaktdaten finden Sie in meinem Lebenslauf.</p>
     <p>Mit freundlichen Grüßen<br>Kevin Roth</p>
   </section>
@@ -124,7 +125,7 @@
 
 <dialog id="viewer">
   <p>Zum Schließen irgendwo klicken</p>
-  <img id="viewer-image" src="" alt="Praktikumsbescheinigung groß">
+  <img id="viewer-image" alt="">
 </dialog>
 
 <script src="js/script.js"></script>

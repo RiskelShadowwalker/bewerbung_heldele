@@ -68,12 +68,6 @@ li {
   margin-bottom: 4px;
 }
 
-code {
-  padding: 2px 5px;
-  background-color: #17181b;
-  font-family: "Courier New", monospace;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -132,10 +126,6 @@ body.light nav a {
 body.light h2,
 body.light footer {
   border-color: #cccccc;
-}
-
-body.light code {
-  background-color: #eeeeee;
 }
 
 body.light img {

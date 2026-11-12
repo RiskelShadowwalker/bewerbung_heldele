@@ -17,6 +17,7 @@ function switchTheme() {
 function openViewer(event) {
   event.preventDefault();
   viewerImage.src = event.currentTarget.href;
+  viewerImage.alt = event.currentTarget.querySelector("img").alt;
   viewer.showModal();
 }
 
